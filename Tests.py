@@ -35,6 +35,7 @@ class TestSequenceFunctions(unittest.TestCase):
     def test_atribute(self):
         #calling atribute should return Monck object
         self.assertIsInstance(self.monck.anything, Monck)
+        self.assertIsInstance(self.monck.anything(), Monck)
         #and save the value
         self.monck.pi = 0
         self.assertEqual(self.monck.pi,0)
